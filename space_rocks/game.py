@@ -35,9 +35,9 @@ class SpaceRocks:
       self.spaceship.rotate(clockwise=False)
     if is_key_pressed[pygame.K_UP]:
       self.spaceship.accelerate()
-      
+
   def _process_game_logic(self):
-    self.spaceship.move()
+    self.spaceship.move(self.screen)
     self.asteroid.move()
 
   def _draw(self):
